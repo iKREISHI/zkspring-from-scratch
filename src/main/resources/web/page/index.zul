@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+    <window title="Главная" border="normal" mode="highlighted"
+            apply="org.zkoss.bind.BindComposer">
+        <!--            viewModel="@id('vm') @init('com.example.demo.IndexVM')">-->
+
+        <label value="Добро пожаловать на главную страницу!" />
+        <separator/>
+        <button label="О нас" onClick="Executions.sendRedirect('/about')" />
+        <button label="Панель администратора" onClick="Executions.sendRedirect('/secure/admin')" />
+    </window>
+</zk>
